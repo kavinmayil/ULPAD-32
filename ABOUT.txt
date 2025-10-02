@@ -1,0 +1,17 @@
+Introduction :
+The rapid growth of the Internet of Things (IoT) has created demand for microcontroller platforms that are flexible, scalable, and energy-efficient. Conventional development boards often integrate a fixed set of peripherals, which limits expandability and results in higher power consumption when unused peripherals remain active. To overcome these limitations, we propose an ultra-low power attach-and-detach MCU platform that allows users to interconnect multiple ESP32-S3–based modules through a standardized connector interface. Each module can act as either a core controller or an expansion board, enabling modular system design with minimal power overhead.
+The platform introduces a border connector with unified communication pins (UART, I²C, SPI, power rails, and reset lines), allowing multiple ESP32-S3 modules to function together. This approach effectively expands GPIO availability, distributes subsystem workloads (e.g., storage, audio, power management), and optimizes energy usage by isolating inactive modules. The attach/detach method also supports application-specific customization, making the system adaptable for IoT, robotics, and embedded research.
+  
+Component Specification :
+S. No	Component	Type/Model	Value / Rating	Specification	Reason for Use
+1	Microcontroller (MCU)	NodeMCU ESP8266 / ESP32	3.3V, 80–240 MHz	Wi-Fi enabled, ultra-low power, GPIO, UART, SPI, I2C support	Core processing & wireless communication, low power for attach-detach applications
+2	Voltage Regulator	LM2596 Buck Converter	Input: 4–40V, Output: 3.3V/5V	Switching regulator, high efficiency (up to 92%), adjustable output	To regulate voltage for MCU and sensors while minimizing power loss
+3	Boost Converter	MT3608	Input: 2–24V, Output: 5–28V	Step-up converter, 2A max current, high efficiency	Provides stable boosted voltage for components requiring higher supply
+4	Super Capacitor	2.7V / 5.5V (10F–100F)	High Capacitance, Low ESR	Energy storage, quick charge/discharge capability	Acts as energy buffer to maintain supply during attach/detach conditions
+5	Diode	SMBJ Diode (TVS)	600W peak pulse power	Transient voltage suppressor, unidirectional	Protects circuit from overvoltage spikes
+6	Resistor	Carbon Film / SMD	220Ω, 1kΩ, 10kΩ (as needed)	±5% tolerance, 0.25W–0.5W rating	For current limiting, pull-up/down, biasing
+7	Capacitor	Ceramic / Electrolytic	0.1µF, 10µF, 100µF	Low ESR, stable temperature behavior	For decoupling, filtering, and stabilizing power supply
+8	Switch (3-pin DPDT)	Slide Switch	Current: 2–3A	Mechanical switch	To select between Boost converter + Supercap or Buck converter + Supercap path
+9	Connector (Header Pins)	Male/Female 2.54mm	1×40 or 2×20 headers	Standard pitch	For external connections and modular design
+10	Test Points	Solder Pad / Pin	–	Gold plated, low resistance	To easily measure voltages and signals during debugging
+
