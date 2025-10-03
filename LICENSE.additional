@@ -1,0 +1,33 @@
+Copyright (c) 2025
+Kavinkumar M (Mayil)
+All rights reserved.
+
+This project, titled “ULPAD32 – Ultra-Low Power Attach/Detach 32-bit MCU Platform”, and all associated files, documentation, and materials are the intellectual property of the author. The ownership extends to, but is not limited to, the following:
+
+- Hardware designs including schematics, PCB layouts, Gerber files, bill of materials (BOM), and 3D models.
+- Firmware, example source code, and reference design files.
+- Compiled binaries, configuration data, and supporting scripts.
+- Documentation such as datasheets, specifications, technical manuals, and project reports.
+
+Usage Restrictions
+
+No part of this project may be copied, modified, reproduced, distributed, manufactured, or used for academic, research, or commercial purposes without the prior written permission of the author. Unauthorized use, reproduction, or adaptation of the designs and documentation is strictly prohibited.
+
+Conditional Permission
+
+If explicit written permission is granted by the author, the project and its materials may be used under the following conditions (adapted from the principles of the MIT License):
+
+1. The copyright notice above and this permission notice must be included in all copies or substantial portions of the project.
+2. Proper acknowledgment must be given to the original author (Kavinkumar M / Mayil) in all academic references, derivative works, publications, or shared repositories.
+3. The project is provided “AS IS”, without any express or implied warranties. This includes, but is not limited to, warranties of merchantability, fitness for a particular purpose, or non-infringement.
+4. The author shall not be held responsible for any claims, damages, or other liabilities that may result from the use, modification, or manufacturing of this project. This includes hardware malfunctions, software errors, or design limitations.
+5. Commercial use, reproduction in mass production, or sale of hardware derived from this project without prior authorization is strictly forbidden.
+
+Disclaimer
+
+The project is intended primarily for academic, educational, and research purposes. The author does not guarantee the accuracy, completeness, or reliability of the hardware and documentation provided. Users must evaluate and verify all designs and documentation independently before practical implementation.
+
+Contact Information
+
+For permission requests, collaboration, usage inquiries, or academic references, please contact:
+📧 mani.chip@gmail.com | kavinmayil123@gmail.com | boopathikumar0012@gmail.com | chandraprakashh139@gmail.com | boopalakrishnan264@gmail.com
